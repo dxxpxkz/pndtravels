@@ -1,0 +1,199 @@
+<html>
+<head>
+    <title>
+
+    </title>
+</head>
+
+<style>
+
+.gallery .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.gallery .box-container .box{
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  border:1rem solid #fff;
+  border-radius: .5rem;
+  flex:1 1 30rem;
+  height: 25rem;
+  position: relative;
+}
+
+.gallery .box-container .box img{
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.gallery .box-container .box .content{
+  position: absolute;
+  top:-100%; left:0;
+  height: 100%;
+  width:100%;
+  text-align: center;
+  background:rgba(0,0,0,.7);
+  padding:2rem;
+  padding-top: 5rem;
+}
+
+.gallery .box-container .box:hover .content{
+  top:0;
+}
+
+.gallery .box-container .box .content h3{
+  font-size: 2.5rem;
+  color:var(--orange);
+}
+
+.gallery .box-container .box .content p{
+  font-size: 1.5rem;
+  color:#eee;
+  padding:.5rem 0;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+
+
+</style>
+
+
+
+
+<body>
+
+
+    <div class="topnav" id="topnav">
+		<a href="index.html" >Home</a>
+		<a href="about.html">About</a>
+		<a href="booking.html">Booking</a>
+		<a href="package.html">Packages</a>
+		<a href="contact.html">Contact</a>
+		<a href="login.html">Logout</a>
+		</div>	
+
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>G</span>
+        <span>A</span>
+        <span>L</span>
+        <span>L</span>
+        <span>E</span>
+        <span>R</span>
+        <span>Y</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/singapore.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Singapore</p>
+                <a href="see.html" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/sydney_opera_house_australia.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Australia</p>
+                <a href="see.html" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/tokyo3.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Tokyo</p>
+                <a href="see.html" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/paris.webp" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Paris</p>
+                <a href="see.html" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/new-york.jpg" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Newyork</p>
+                <a href="see.html" class="btn">see more</a>
+            </div>
+        </div>
+       
+        <div class="box">
+            <img src="images/maldives.webp" alt="">
+            <div class="content">
+                <h3>amazing places</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="see.html" class="btn">see more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+</body>
+</html>
